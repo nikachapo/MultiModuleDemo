@@ -48,6 +48,21 @@ android {
 }
 
 dependencies {
+
+    // core
+    implementation(project(Modules.core))
+
+    // auth feature
+    implementation(project(Modules.authDomain))
+    implementation(project(Modules.authData))
+    implementation(project(Modules.authPresentation))
+
+    // todo feature
+    implementation(project(Modules.todoDomain))
+    implementation(project(Modules.todoData))
+    implementation(project(Modules.todoPresentation))
+
+
     implementation(Compose.compiler)
     implementation(Compose.ui)
     implementation(Compose.uiToolingPreview)

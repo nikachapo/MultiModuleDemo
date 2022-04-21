@@ -12,5 +12,15 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "MultiModuleDemo"
 include ':app'
+include ':core'
+include ':auth'
+include ':auth:auth_domain'
+include ':auth:auth_data'
+include ':auth:auth_presentation'
+include ':todo'
+include ':todo:todo_domain'
+include ':todo:todo_presentation'
+include ':todo:todo_data'
